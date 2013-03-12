@@ -1,0 +1,1 @@
+This class library provides convenient wrapper around the Nfield HTTP-based API.
