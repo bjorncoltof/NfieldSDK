@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Nfield
+namespace Nfield.Core
 {
     public interface IClientFactory
     {

@@ -9,3 +9,4 @@ bin/
 # Resharper
 *[Rr]e[Ss]harper.user
 _ReSharper.*/
+TestResults/
