@@ -5,6 +5,7 @@ bin/
 *.sln.cache
 *.suo
 *.csproj.user
+*.DotSettings.user
 
 # Resharper
 *[Rr]e[Ss]harper.user
