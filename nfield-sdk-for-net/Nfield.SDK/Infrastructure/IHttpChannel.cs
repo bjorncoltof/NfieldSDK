@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Nfield.Infrastructure
 {
-    public interface IHttpClient
+    public interface IHttpChannel
     {
         Task<HttpResponseMessage> SendAsync(HttpRequestMessage request);
     }

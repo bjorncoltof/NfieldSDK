@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Nfield.Infrastructure
 {
-    internal class HttpClientWrapper : IHttpClient
+    internal class HttpChannel : FactoryBase<HttpChannel, IHttpChannel>, IHttpChannel
     {
         private readonly HttpClient _httpClient;
 
-        public HttpClientWrapper()
+        public HttpChannel()
         {
             _httpClient = new HttpClient();
         }

@@ -55,8 +55,9 @@
     <Compile Include="Core\ClientFactory.cs" />
     <Compile Include="Core\IClient.cs" />
     <Compile Include="Core\IClientFactory.cs" />
-    <Compile Include="Infrastructure\HttpClientWrapper.cs" />
-    <Compile Include="Infrastructure\IHttpClient.cs" />
+    <Compile Include="Infrastructure\FactoryBase.cs" />
+    <Compile Include="Infrastructure\HttpChannel.cs" />
+    <Compile Include="Infrastructure\IHttpChannel.cs" />
     <Compile Include="Infrastructure\IJsonConverter.cs" />
     <Compile Include="Infrastructure\JsonConverter.cs" />
     <Compile Include="Models\AuthenticationRequest.cs" />
