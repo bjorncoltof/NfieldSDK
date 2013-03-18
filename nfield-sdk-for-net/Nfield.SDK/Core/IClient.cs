@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using Nfield.Models;
 
 namespace Nfield.Core
@@ -9,6 +10,6 @@ namespace Nfield.Core
         string UserName { get; }
         string Password { get; }
 
-        AuthenticationResponse Authenticate();
+        Task<AuthenticationResponse> AuthenticateAsync();
     }
 }

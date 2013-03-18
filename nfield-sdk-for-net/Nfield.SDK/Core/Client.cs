@@ -26,7 +26,7 @@ namespace Nfield.Core
         public string UserName { get; private set; }
         public string Password { get; private set; }
 
-        public AuthenticationResponse Authenticate()
+        public Task<AuthenticationResponse> AuthenticateAsync()
         {
             var converter = JsonConverter.Create();
 
@@ -43,8 +43,8 @@ namespace Nfield.Core
                 return HttpClient.SendAsync(requestMessage)
                     .ContinueWith( t => t.Result.Content.ReadAsStringAsync())
                     .Unwrap()
-                    .ContinueWith(t => converter.Deserialize<AuthenticationResponse>(t.Result))
-                    .Result;
+                    .ContinueWith(t => converter.Deserialize<AuthenticationResponse>(t.Result));
+
             }
         }
 

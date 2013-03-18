@@ -42,9 +42,9 @@ namespace Tests.Nfield.Core
 
             var client = new Client(mockHttpClient.Object, "domain", "user", "password");
 
-            var result = client.Authenticate();
+            var result = client.AuthenticateAsync();
 
-            Assert.Same(expected, result);
+            Assert.Same(expected, result.Result);
         }
     }
 }
